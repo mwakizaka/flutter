@@ -61,6 +61,7 @@ found in the LICENSE file. -->
       android:layout_margin="@dimen/edge_margin"
       android:src="@drawable/ic_add_black_24dp"
       android:clickable="true"
+      android:contentDescription="add(native)"
       app:rippleColor="@color/grey"
       app:fabSize="normal"
       app:backgroundTint="@color/white"
