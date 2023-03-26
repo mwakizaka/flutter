@@ -3,8 +3,10 @@
 // found in the LICENSE file.
 
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
   runApp(const FlutterView());
@@ -20,6 +22,8 @@ class FlutterView extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       home: const MyHomePage(),
     );
   }
@@ -86,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _sendFlutterIncrement,
         child: Semantics(
-          label: 'Platform add',
+          label: AppLocalizations.of(context)!.flutterAdd,
           child: const Icon(Icons.add),
         ),
       ),
