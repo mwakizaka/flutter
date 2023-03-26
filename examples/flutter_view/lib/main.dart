@@ -85,7 +85,10 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _sendFlutterIncrement,
-        child: const Icon(Icons.add),
+        child: Semantics(
+          label: 'Platform add',
+          child: const Icon(Icons.add),
+        ),
       ),
     );
   }
