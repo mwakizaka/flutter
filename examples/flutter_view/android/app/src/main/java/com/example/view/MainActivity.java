@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.button_tap);
         String value = "Flutter button tapped " + counter + (counter == 1 ? " time" : " times");
         textView.setText(value);
+        textView.setContentDescription(value);
     }
 
     @Override

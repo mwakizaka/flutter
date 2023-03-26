@@ -34,6 +34,7 @@ found in the LICENSE file. -->
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/button_tap"
+        android:contentDescription="@string/button_tap"
         android:layout_weight="1"
         android:gravity="center"
         android:textSize="@dimen/font_size"
