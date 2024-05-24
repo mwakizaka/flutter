@@ -79,9 +79,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text(
-                      'Button tapped $_counter time${ _counter == 1 ? '' : 's' }.',
-                      style: const TextStyle(fontSize: 17.0),
+                    Semantics(
+                      identifier: 'io.flutter.examples.platform_view:id/example-text',
+                      container: true,
+                      child: Text(
+                        'Button tapped $_counter time${ _counter == 1 ? '' : 's' }.',
+                        style: const TextStyle(fontSize: 17.0),
+                      )
                     ),
                     Padding(
                       padding: const EdgeInsets.all(18.0),
